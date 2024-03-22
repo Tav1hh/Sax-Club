@@ -70,7 +70,7 @@ body>nav>a {
     padding: 5px;
     text-decoration: none;
 }
-main div{
+.imagem-principal{
     display: flex;
     height: 300px;
     padding: 3px;
@@ -83,6 +83,29 @@ main div{
 }
 main div img{
     height: 300px;
+}
+h2{
+    text-align: center;
+}
+.div-musicas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.div-musicas div{
+    border-radius: 8px;
+    text-align: center;
+    width: 180px;
+    height: 250px;
+    margin: 10px;
+    color: black;
+    background-color: cadetblue;
+}
+.div-musicas div img{
+    border-radius: 15px;
+    height: 200px;
+    padding: 10px;
 }
 footer {
     text-align: center;
@@ -115,6 +138,18 @@ footer>div {
     }
     header>div>.psq{
         width: 200px;
+    }
+    .div-musicas div{
+        display: flex;
+        align-items:center;
+        width: 100vw;
+        height: 100px;
+    }
+    .div-musicas div p{
+        padding: 10px;
+    }
+    .div-musicas div img{
+        height: 80px;
     }
 
     footer {
