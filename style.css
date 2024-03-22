@@ -90,6 +90,8 @@ main div img{
 }
 h2{
     text-align: center;
+    color: white;
+    padding: 15px
 }
 .div-musicas{
     display: flex;
