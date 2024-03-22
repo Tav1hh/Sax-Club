@@ -70,20 +70,33 @@ body>nav>a {
     padding: 5px;
     text-decoration: none;
 }
-main div{
+
+main {
     display: flex;
-    height: 300px;
-    padding: 3px;
-    margin:20px;
-    border-radius: 20px;
-    background-color: black;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
-    
+    background-color: black;
+
 }
-main div img{
-    height: 300px;
+
+main>div>img {
+    border-radius: 15px;
+    height: 200px;
+    padding: 10px;
 }
+
+main>div {
+    border-radius: 8px;
+    text-align: center;
+    width: 180px;
+    height: 250px;
+    margin: 10px;
+    color: black;
+    background-color: cadetblue;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
 footer {
     text-align: center;
     background-color: #08080A;
@@ -112,6 +125,18 @@ footer>div {
     header>nav,
     body>nav {
         display: none;
+    }
+    main>div{
+        display: flex;
+        align-items:center;
+        width: 100vw;
+        height: 100px;
+    }
+    main>div>p{
+        padding: 10px;
+    }
+    main>div>img{
+        height: 80px;
     }
     header>div>.psq{
         width: 200px;
