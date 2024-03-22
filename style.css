@@ -124,4 +124,7 @@ footer>div {
     footer>div {
         margin: auto;
     }
+    .saxmg{
+        display: none;
+    }
 }
