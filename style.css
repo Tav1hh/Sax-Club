@@ -135,20 +135,26 @@ footer img {
     border-radius: 10px;
 }
 @media screen and (max-width: 800px) {
-    /*Header*/
+
     .cabecalho{
         justify-content: space-around;
     }
+
     .psq input{
         width: 200px;
     }
+    
     .navegacao, .some{
         display: none;
     }
+
     .menu a{
         margin: 0px;
     }
-    /*Musicas*/
+
+    footer{
+        flex-direction: column-reverse;
+    }
 
     .saxmg{
         display: none;
