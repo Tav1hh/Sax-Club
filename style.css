@@ -6,7 +6,9 @@
     font: arial;
 }
 
-header {
+/*Cabecalho*/
+
+.cabecalho{
     background-color: #08080A;
     color: #EBD065;
     display: flex;
@@ -16,17 +18,12 @@ header {
 
 }
 
-header>nav {
+.psq{
     display: flex;
     align-items: baseline;
 }
 
-header>div {
-    display: flex;
-    align-items: baseline;
-}
-
-header>div>.psq {
+.psq input{
     padding: 0px 10px;
     width: 350px;
     height: 30px;
@@ -34,18 +31,18 @@ header>div>.psq {
     border-radius: 5px 0px 0px 5px;
 }
 
-header>div>.btn {
+.psq button{
     height: 30px;
     margin: 0px;
     border-radius: 0px 5px 5px 0px;
     width: 55px;
 }
 
-header>div>.btn:hover {
+.psq button:hover {
     background-color: #EBD065;
 }
 
-header>nav>a {
+.navegacao a{
     text-decoration: none;
     color: #EBD065;
     padding: 6px;
@@ -53,23 +50,26 @@ header>nav>a {
     border-radius: 3px;
 }
 
-nav>a:hover {
+.navegacao a:hover {
     background-color: #1F1700;
 }
 
-body>nav {
+.menu{
     background-color: #08080A;
     display: flex;
     justify-content: center;
 }
 
-body>nav>a {
+.menu a {
     margin: 0px 10px;
     color: #EBD065;
     border-radius: 8px;
     padding: 5px;
     text-decoration: none;
 }
+
+/*PRINCIPAL*/
+
 .imagem-principal{
     display: flex;
     height: 300px;
@@ -93,78 +93,63 @@ h2{
     color: white;
     padding: 15px;
 }
-.div-musicas{
+/*Musicas*/
+.musicas{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
+    position: relative;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
 }
-.div-musicas div{
-    border-radius: 8px;
+::-webkit-scrollbar{
+    width: 0px;
+}
+.cards{
     text-align: center;
+    background-color: aquamarine;
     width: 180px;
-    height: 250px;
-    margin: 10px;
-    color: black;
-    background-color: cadetblue;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 5px;
+    position: sticky;
+    flex-shrink: 0;
+    object-fit: cover;
+    scroll-behavior: smooth;
 }
-.div-musicas div img{
-    border-radius: 15px;
-    height: 200px;
-    padding: 10px;
-}
+
+/*Footer*/
 footer {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    padding: 5px;
     background-color: #08080A;
     color: #EBD065;
-    display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
-
-footer>div>a>img {
+footer p{
+    padding: 0px 15px;
+}
+footer img {
     width: 50px;
+    margin: 0px 10px;
     height: 50px;
     border-radius: 10px;
 }
-
-footer>div {
-    text-align: center;
-    width: 300px;
-    padding: 4px;
-}
-
 @media screen and (max-width: 800px) {
-    header {
+    /*Header*/
+    .cabecalho{
         justify-content: space-around;
     }
-
-    header>nav,
-    body>nav {
-        display: none;
-    }
-    header>div>.psq{
+    .psq input{
         width: 200px;
     }
-    .div-musicas div{
-        display: flex;
-        align-items:center;
-        width: 100vw;
-        height: 100px;
+    .navegacao, .some{
+        display: none;
     }
-    .div-musicas div p{
-        padding: 10px;
+    .menu a{
+        margin: 0px;
     }
-    .div-musicas div img{
-        height: 80px;
-    }
+    /*Musicas*/
 
-    footer {
-        display: block;
-    }
-
-    footer>div {
-        margin: auto;
-    }
     .saxmg{
         display: none;
     }
