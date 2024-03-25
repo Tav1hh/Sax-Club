@@ -103,10 +103,13 @@ h2{
     display: flex;
     position: relative;
     overflow: auto;
-    scroll-snap-type: x mandatory;
+    scroll-snap-type: y mandatory;
 }
 ::-webkit-scrollbar{
-    width: 0px;
+    width: 5px;
+    color: black;
+    background-color: gray;
+    text-decoration: dotted;
 }
 .cards{
     text-align: center;
@@ -132,6 +135,7 @@ footer {
 }
 footer p{
     padding: 0px 15px;
+    color: white;
 }
 footer img {
     width: 50px;
