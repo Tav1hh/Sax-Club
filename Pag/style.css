@@ -15,7 +15,7 @@
     align-items: center;
     padding: 0px 15px;
     justify-content: space-between;
-    height: 8vh;
+    height: 7vh;
 
 }
 
@@ -47,6 +47,7 @@
     text-decoration: none;
     color: #EBD065;
     margin: 0px 5px;
+    padding: 8px;
     border-radius: 3px;
 }
 
@@ -57,120 +58,64 @@
 .menu{
     background-color: #08080A;
     display: flex;
+    align-items: center;
+    height: 3vh;
     justify-content: center;
 }
-
-
 
 .menu a {
     margin: 0px 10px;
     color: #EBD065;
     border-radius: 8px;
-    padding: 5px;
     text-decoration: none;
 }
 
 /*Main*/
-
 main{
     display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
     background-color: black;
-    border: 1px solid black;
+    color: white;
+    text-align: center;
+}
+.partitura{
+    width: 70vw;
+    height: 90vh;
 }
 .controles{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding: 10px;
-    width: 40vw;
-    color: white;
+    width: 30vw;
 }
-
-.partitura{
-    height: 87.2vh;
-    width: 60vw;
+.controles audio{
+    width: 20vw;
+    padding: 20px 0px;
 }
-
-.controles h2{
-    padding: 10px;
-}
-
-audio{
-    margin-top: 10px;
-    width: 80%;
-    margin: 0px auto;
-}
-
 .controles button{
     padding: 10px;
-    width: 150px;
+    border-radius: 5px;
+    width: 10vw;
     margin-top: 5px;
-    border-radius: 2px;
 }
 
-/*Footer*/
-footer {
-    display: flex;
-    align-items: center;
-    padding: 5px;
-    background-color: #08080A;
-    color: #EBD065;
-    justify-content: center;
-}
-footer p{
-    padding: 0px 15px;
-    color: white;
-}
-footer img {
-    width: 50px;
-    margin: 0px 10px;
-    height: 50px;
-    border-radius: 10px;
-}
-
-
-/*Media Query*/
-
-@media screen and (max-width: 800px) {
-
-    .cabecalho{
-        justify-content: space-around;
+@media screen and (max-width:800px){
+    main{
+        display: block;
     }
-
-    .psq input{
-        width: 200px;
-    }
-    
     .navegacao, .some{
         display: none;
     }
-
-    .menu a{
-        margin: 0px;
-    }
-
-    footer{
-        flex-direction: column-reverse;
-    }
-
-    .saxmg{
-        display: none;
-    }
-    main{
-        flex-direction: column-reverse;
-    }
-
     .controles{
-        width: 400px;
+        width: 60vw;
+        padding: 20px;
         margin: 0px auto;
     }
-
-    audio{
-        width: 250px;
+    .controles audio{
+        width: 200px;
     }
-    
+    .controles button{
+        width: 20vw;
+    }
     .partitura{
-        height: 100vh;
         width: 95vw;
         margin: 0px auto;
     }
