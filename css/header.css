@@ -36,7 +36,7 @@
 .navegacao a{
     text-decoration: none;
     margin: 0px 5px;
-    padding: 0px;
+    padding: 8px;
     border-radius: 3px;
 }
 
@@ -64,12 +64,15 @@
     border-radius: 8px;
     text-decoration: none;
 }
+.mobile{
+    display: none;
+}
 
 
 /*Media Query*/
 
 @media screen and (max-width:800px) {
-    .some{
+    .some, .navegacao{
         display: none;
     }
     .cabecalho{
@@ -78,10 +81,18 @@
     .psq input{
         max-width: 250px;
     }
-    .navegacao{
-        right: 0;
-        justify-content: center;
+    .mobile{
         position: fixed;
-        width: 100px;
-    }    
+        display: flex;
+        width: 100vw;
+        bottom: 0;
+        padding: 10px;
+        background-color: #08080A;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .mobile a img{
+        color: white;
+
+    }
 }
