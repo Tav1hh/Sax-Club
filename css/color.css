@@ -6,6 +6,7 @@
     font: arial;
     text-decoration: none;
     color: black;
+    background-color: rgb(91, 91, 90);
 }
 
 /*Cor das Letras*/
@@ -22,8 +23,11 @@
     background-color: #EBD065;
 }
 
-h2, main, main p, footer p{
+h2, main, main p, footer p, .controles button{
     color: white;
+}
+.cards p{
+    color: black;
 }
 
 /*Backgrounds*/
@@ -31,7 +35,10 @@ h2, main, main p, footer p{
     background-color: #08080A;
 }
 
-main{
+.psq input, .psq button{
+    background-color: white;
+}
+main, .menu a, .controles button{
     background-color: black;
 }
 .cards{

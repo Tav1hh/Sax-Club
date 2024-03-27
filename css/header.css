@@ -68,11 +68,10 @@
     display: none;
 }
 
-
 /*Media Query*/
 
 @media screen and (max-width:800px) {
-    .some, .navegacao{
+    .some, .navegacao, footer{
         display: none;
     }
     .cabecalho{
