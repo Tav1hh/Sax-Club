@@ -5,7 +5,6 @@
     font-family: Arial, Helvetica, sans-serif;
     font: arial;
     text-decoration: none;
-    color: black;
 }
 
 /*Cor das Letras*/
@@ -38,7 +37,7 @@ h2, main, main p, footer p, .controles button{
     background-color: white;
 }
 .controles{
-    background-color: rgb(53, 41, 41);
+    background-color: grey;
 }
 main, .menu a, .controles button{
     background-color: black;
