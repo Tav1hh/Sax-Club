@@ -37,6 +37,9 @@ h2, main, main p, footer p, .controles button{
 .psq input, .psq button{
     background-color: white;
 }
+.controles{
+    background-color: rgb(53, 41, 41);
+}
 main, .menu a, .controles button{
     background-color: black;
 }
