@@ -24,7 +24,6 @@ h2{
 /*Musicas*/
 .musicas{
     display: flex;
-    position: relative;
     overflow: auto;
     scroll-snap-type: y mandatory;
 }
@@ -38,7 +37,6 @@ h2{
     padding: 8px;
     border-radius: 8px;
     margin: 5px;
-    position: sticky;
     flex-shrink: 0;
     object-fit: cover;
     scroll-behavior: smooth;
