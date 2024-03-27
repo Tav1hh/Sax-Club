@@ -71,8 +71,11 @@
 /*Media Query*/
 
 @media screen and (max-width:800px) {
-    .some, .navegacao, footer{
+    .some, .navegacao{
         display: none;
+    }
+    footer{
+        height: 50px;
     }
     .cabecalho{
         justify-content: center;
