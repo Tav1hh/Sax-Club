@@ -1,0 +1,46 @@
+* {
+    border: 0px;
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font: arial;
+    text-decoration: none;
+    color: black;
+}
+
+/*Cor das Letras*/
+
+.cabecalho h1, .navegacao a, .menu a{
+    color: #EBD065;
+}
+
+.navegacao a:hover{
+    background-color: #1F1700;;
+}
+
+.psq button:hover {
+    background-color: #EBD065;
+}
+
+h2, main, main p, footer p{
+    color: white;
+}
+
+/*Backgrounds*/
+.menu, .cabecalho, footer{
+    background-color: #08080A;
+}
+
+main{
+    background-color: black;
+}
+.cards{
+    background-color: aquamarine;
+}
+
+/*Barra de Rolagem*/
+::-webkit-scrollbar{
+    background-color: gray;
+}
+
+/*Media Query*/
