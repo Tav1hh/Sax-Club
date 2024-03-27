@@ -48,7 +48,7 @@ main, .menu a, .controles button{
 
 /*Barra de Rolagem*/
 ::-webkit-scrollbar{
-    background-color: gray;
+    background-color: rgb(0, 0, 0);
 }
 
 /*Media Query*/

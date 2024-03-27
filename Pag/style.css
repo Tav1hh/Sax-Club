@@ -29,7 +29,7 @@ main{
     }
 
     .controles{
-        width: 50vw;
+        width: 300px;
         height: 300px;
         padding: 20px 0px;
         margin: 0px auto;
@@ -46,6 +46,7 @@ main{
         margin: 0px auto;
     }
     .botoes{
+        width: 240px;
         margin: 0px auto;
         
     }
